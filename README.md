@@ -470,7 +470,7 @@ Bazen kod tekrarı bilerek yapılır. İşin yetişmesi gerek zamanın sonuna ge
 - Aynı kod, aynı sınıfta iki veya daha fazla metotta bulunursa: [Extract Method](#extract-method).
 - Aynı kod, aynı seviyedeki iki alt sınıfta bulunursa;
   - İki sınıf için de, alanı üste taşıma [Pull Up Field](#pull-up-field) yöntemini takip ederek: [Extract Method](#extract-method).
-  - Tekrar eden kod bir yapıcı metot içinde ise: [Pull Up Constructor Body](#pull-up-constructor-body).
+  - Tekrar eden kod bir yapıcı metot içindeyse: [Pull Up Constructor Body](#pull-up-constructor-body).
   - Eğer yinelenen kod benzer ancak tamamen aynı değilse: [Form Template Method](#form-template-method).
   - İki metot da aynı şeyi yapar, ancak farklı algoritmalar kullanırsa, en iyi algoritmayı seçin: [Substitute Algorithm](#substitute-algorithm).
 - Tekrar eden kod iki farklı sınıfta bulunursa;
@@ -648,7 +648,7 @@ Bir sınıfın tek işi, tüm işleri başka sınıflara yaptırmak.
 
 #### Sebep
 
-"Message Chains" den kurtulmak için aşırı derecede kod başka sınıflara taşındığında bu durum oluşabilir. Diğer bir sebep de, bir sınıfın kodları parça parça başka sınıflara taşındığında ortaya çıkar. İçi boşalan bir sınıf, içi boş bir kabuk gibi kalır.
+"Message Chains" ten kurtulmak için aşırı derecede kod başka sınıflara taşındığında bu durum oluşabilir. Diğer bir sebep de, bir sınıfın kodları parça parça başka sınıflara taşındığında ortaya çıkar. İçi boşalan bir sınıf, içi boş bir kabuk gibi kalır.
 
 #### Çözüm
 
@@ -785,7 +785,7 @@ func writeUserInformationToConsole() {
 
 #### Neden?
 
-- Bir metodda ne kadar çok satır bulunursa, metodun ne yaptığını bulmak o kadar zor olur.
+- Bir metotta ne kadar çok satır bulunursa, metodun ne yaptığını bulmak o kadar zor olur.
 - Gruplanan kodlar, ihtiyaç halinde başka yerden de çağrılabilir.
 - Sonraki başka bir refactoring tekniği için de bir adım olabilir.
 
@@ -995,7 +995,7 @@ Daha okunabilir ve anlaşılabilir kod. İfadenin ne anlama geldiğini ismi ile 
 
 ## KAYNAKLAR
 
-**NOT**: Yararlanılan kaynaklar sürekli eklenecek. Bu döküman anlatım tarzı olarak https://refactoring.guru/ sitesindekine benzer bir yapı kullanıyor. Ana kaynak olarak bu siteden yararlanılıyor. Bu sitenin sahibi Alexander Shvets, içeriğin üzerine bina ettiği başka bir içeriği paralı olarak sattığı için, bedava olan kısmın birebir çevirisinin MIT lisans altında GitHub da olmasını istemiyor. Dolayısıyla bu dökümanın içeriği olabildiğince özgün, araştırılmış, tecrübe ile desteklenmiş, farklı kaynaklardan düzenlenmiş içeriklerden oluşmaktadır.
+**NOT**: Yararlanılan kaynaklar sürekli eklenecek. Bu döküman anlatım tarzı olarak https://refactoring.guru/ sitesindekine benzer bir yapı kullanıyor. Ana kaynak olarak bu siteden yararlanılıyor. Bu sitenin sahibi Alexander Shvets, içeriğin üzerine bina ettiği başka bir içeriği paralı olarak sattığı için, bedava olan kısmın birebir çevirisinin MIT lisans altında GitHub da olmasını istemiyor. Dolayısıyla bu dokümanın içeriği olabildiğince özgün, araştırılmış, tecrübe ile desteklenmiş, farklı kaynaklardan düzenlenmiş içeriklerden oluşmaktadır.
 
 - https://refactoring.guru/
 - http://www.yilmazcihan.com/yazilim-gelistirmede-teknik-borc/
